@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#yl2 käsu täitmine
+#
+echo "Andero Piir" # Minu nimi
+echo "ISP118 IT-süsteemide nooremspetsialist" # Minu õppegrupp
+echo "Õpetab palju huvitavat" # Minu muljed tunnist
+echo "Motivatsioon on hea, uued ained on tulemas ja varsti saab vaheaega nautida" # Minu praegused muljed ja edasijõudmine 
+#
+#skriptimislõpp
