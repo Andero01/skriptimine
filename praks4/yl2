@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+#Kokkadele abi küpsisetordi valmistamisel
+#
+echo -n "Sisestage kandiku pikkus (cm)" # Küsib kandiku pikkust
+read aws # Loeb kandiku pikkuse
+echo -n "Sisestage kandiku laius (cm)" # Küsib kandiku laiust
+read aks # Loeb kandiku laiuse
+echo -n "Sisestage küpsiste suurus (cm)" # Küsib küpsiste pikkust
+read ikq # Loeb küpsise suuruse
+echo -n "Sisestage tordi kihtide arv= " # Küsib tordi kihtide arvu
+read mvp # Loeb kihtite koguse
+echo -n "Sisestage küpsiste arv pakis= " # Küsib küpsiste arvu paki kohta
+read ndx # Loeb küpsiste arvu pakui kohta"
+echo -n "on vaja " # Vastab palju on vaja
+expr $aws / $ikq + $aks / $ikq \* $mvp / $ndx # Arvutab palju küpsiseid on vaja
+echo "pakki küpsist ja lisaks " # Annab mitu pakki ja lisaks küpsiseid läheb vaja
+expr $mvp % $ndx # Arvutab mitu lisa küpsist on vaja
+echo "küpsist" # Annab teaba mitu lisa küpsist
+#
+#Skripti lõpp
