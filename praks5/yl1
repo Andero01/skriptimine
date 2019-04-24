@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+#Kolmnurga hüpotenuusi skript
+#
+echo "Sisestage kolmnurga kaatet A (cm): "
+read a
+echo "Sisestage kolmnurga kaatet B (cm): "
+read b
+c=$(bc <<< "scale=2;sqrt($a^2 + $b^2)") #Scale näitab arvude kogust peale koma. Sqrt märgistab kõik mis läheb ruutjuure alla.
+echo "Kolmnurga hüpotenuus on" $c "cm"
+#
+#Skripti lõpp
+
